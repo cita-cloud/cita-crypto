@@ -2,14 +2,15 @@
 name = "cita-crypto"
 version = "0.1.0"
 authors = ["Rivtower Technologies <contact@rivtower.com>"]
+description = "A switch to choice algorithm, secp256k1, ed25519, sm2"
 license = "Apache-2.0"
 edition = "2018"
 
 [dependencies]
-cita-crypto-trait = { git = "https://github.com/cita-cloud/cita-crypto-trait",branch = "main" }
-cita-ed25519 = { git = "https://github.com/cita-cloud/cita-ed25519",branch = "main", optional = true  }
-cita-secp256k1 = { git = "https://github.com/cita-cloud/cita-secp256k1",branch = "main", optional = true  }
-cita-sm2 = { git = "https://github.com/cita-cloud/cita-sm2",branch = "main", optional = true  }
+cita-crypto-trait = "0.1"
+cita-ed25519 = { version = "0.1", optional = true  }
+cita-secp256k1 = { version = "0.1", optional = true  }
+cita-sm2 = { version = "0.1", optional = true  }
 
 [features]
 default = []
